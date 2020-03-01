@@ -1,0 +1,510 @@
+body {
+    font-family: helvetica;
+    background-color: #fffffd;
+    max-width: 1130px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 14rem;
+}
+
+
+/*中间第一部分*/
+.number1 {
+    width: 100%;
+    height: 12rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+}
+
+.shengyu {
+    width: 100%;
+    text-align: center;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    margin-top: 1rem;
+}
+
+.zi {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.aj {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.aj2 {
+    font-size: 0.6rem;
+    margin: 0;
+    color: grey;
+}
+
+.chou {
+    width: 80%;
+    text-align: center;
+    height: 1.3rem;
+    margin: 0 auto;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+}
+
+.liulan {
+    width: 100%;
+    text-align: center;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+}
+
+/*中间第二部分*/
+
+
+.row2 {
+    width: 100%;
+    height: 28rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 1.8rem;
+}
+
+.row2 .yihang {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.diyi {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+}
+
+
+.yihang div img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.next {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next .choujiang input {
+    width: 8rem;
+    padding: 3px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* future proofing */
+    -khtml-border-radius: 10px;
+    /* for old Konqueror browsers */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.next .qiuzhu a {
+    width: 9rem;
+    padding: 6px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    /* future proofing */
+    -khtml-border-radius: 8px;
+    /* for old Konqueror browsers */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    margin-right: 1rem;
+    line-height: 2.1rem;
+    text-decoration: none;
+}
+
+
+
+.tuhao {
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.tuhao .jie {
+    width: 6rem;
+    height: 7rem;
+    margin: 1rem;
+    font-size: 12px;
+}
+
+.tuhao .jie img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 12px;
+}
+
+.shao {
+    padding: 0.4rem;
+    font-size: 12px;
+    line-height: 2rem;
+}
+
+
+.row7 {
+    width: 100%;
+    height: 44rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    background-image: url('./images/19.jpg');
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 1rem;
+}
+
+.row7 .head {
+    width: 100%;
+    height: 14rem;
+    background-image: url('./images/18.jpeg');
+    background-size: 100% 100%;
+}
+
+.row7 .cen {
+    width: 100%;
+    height: 22rem;
+    background-image: url('./images/21.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+    justify-content: space-around;
+    border-radius: 0.6rem;
+}
+
+.row7 .yi {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row7 .yi div {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.row7 .yi div img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.row7 .er {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row7 .cen .er img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.row7 .cen .er .raffle {
+    width: 5rem;
+    height: 5rem;
+}
+
+.row7 .san {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row7 .cen .san div {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('./images/youhui.jpg');
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.row7 .cen .san div span {
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+.jiangli {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+}
+
+.row7 .jiangli button {
+    margin: 0 auto;
+    width: 8rem;
+    padding: 3px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* future proofing */
+    -khtml-border-radius: 10px;
+    /* for old Konqueror browsers */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+/*中奖名单*/
+.row3 {
+    width: 100%;
+    height: 22rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 0.5rem;
+}
+
+
+.row3 .zhong {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.row3 .ren {
+    width: 100%;
+    height: 15rem;
+}
+
+.row3 .ren .none {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 .ren .tou {
+    width: 60%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 12px;
+}
+
+.row3 .ren .tou .im {
+    background-image: url('./images/2.jpg');
+    background-size: 100% 100%;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    float: left;
+    margin: 0.5rem;
+}
+
+
+.row3 .ren .success {
+    width: 25%;
+    height: 3rem;
+    line-height: 3rem;
+    color: #ff6600;
+    font-size: 12px;
+}
+
+.row4 {
+    width: 100%;
+    height: 12rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 0.8rem;
+}
+
+.row4 .zhong {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    height: 2.5rem;
+}
+
+.row4 .shu p {
+    font-size: 12px;
+}
+
+.row5 {
+    width: 100%;
+    height: 22rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 0.8rem;
+}
+
+.row5 .shu p {
+    font-size: 12px;
+}
+
+.row5 .zhong {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    height: 2.5rem;
+}
+
+.row5 .shu {
+    height: 20rem;
+}
+
+.row6 {
+    width: 100%;
+    height: 95rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: -2px 0 2px #ddd,
+        /*左边阴影*/
+        2px 0 2px #ddd,
+        /*右边阴影*/
+        0 -2px 2px #ddd,
+        /*顶部阴影*/
+        0 2px 2px #ddd;
+    /*底边阴影*/
+    padding: 0.8rem;
+}
+
+.row6 .zhong {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    height: 2.5rem;
+}
+
+.row6 table {
+    width: 100%;
+    height: 10rem;
+}
+
+.row6 table thead th {
+    height: 48px;
+    background-color: #fded14;
+
+}
+
+.row6 table tbody td {
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #47c920;
+    color: #fff;
+}
+
+.row6 .pc1 {
+    width: 100%;
+    height: 13rem;
+    border: 1.5px solid #ddd;
+}
+
+.row6 img {
+    width: 100%;
+    height: 13rem;
+}

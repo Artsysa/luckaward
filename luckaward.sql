@@ -1,0 +1,480 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 47.92.234.115
+ Source Server Type    : MySQL
+ Source Server Version : 50728
+ Source Host           : 47.92.234.115:3306
+ Source Schema         : luckaward
+
+ Target Server Type    : MySQL
+ Target Server Version : 50728
+ File Encoding         : 65001
+
+ Date: 18/02/2020 12:02:55
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for prize
+-- ----------------------------
+DROP TABLE IF EXISTS `prize`;
+CREATE TABLE `prize`  (
+  `t1` int(2) NULL DEFAULT NULL COMMENT 'Aj球鞋',
+  `t2` int(2) NULL DEFAULT NULL COMMENT '口红',
+  `t3` int(2) NULL DEFAULT NULL COMMENT '王者皮肤',
+  `t4` int(2) NULL DEFAULT NULL COMMENT '精美挂件',
+  `t5` int(2) NULL DEFAULT NULL COMMENT 'Usb台灯',
+  `t6` int(2) NULL DEFAULT NULL COMMENT '免学费学车',
+  `t7` int(2) NULL DEFAULT NULL COMMENT '1299元学车',
+  `t8` int(2) NULL DEFAULT NULL COMMENT '优惠200元学车'
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of prize
+-- ----------------------------
+INSERT INTO `prize` VALUES (99, 99, 99, 99, 99, 99, 99, 99);
+
+-- ----------------------------
+-- Table structure for rewardlist
+-- ----------------------------
+DROP TABLE IF EXISTS `rewardlist`;
+CREATE TABLE `rewardlist`  (
+  `openid` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `time` datetime(0) NULL DEFAULT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of rewardlist
+-- ----------------------------
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-11-06 18:11:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-06 18:21:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 18:21:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:21:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:34');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:34');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:35');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:36');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:36');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:21:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 18:21:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:38');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:39');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:39');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:40');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:40');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:41');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:41');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 18:21:42');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:42');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 18:21:43');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:44');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:44');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:45');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:21:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:47');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:21:47');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:21:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:49');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:21:49');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:21:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:21:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:28:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:02');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:29:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:15');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:29:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:29:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:35');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:35');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:44');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:44');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:45');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:52');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '免学费学车', '2020-02-06 18:29:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:29:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:29:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-06 18:29:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '免学费学车', '2020-02-06 18:29:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:29:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-06 18:29:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 18:29:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:29:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:29:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:29:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:29:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:30:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:02');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:03');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:30:03');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:04');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:05');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:05');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:06');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:06');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:07');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:07');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:08');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:09');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:30:09');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:30:10');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:30:12');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:13');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:30:13');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:17');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:17');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:30:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:19');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:30:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:30:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:34:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:35:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:35:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:38:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:38:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:38:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:42:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:44:08');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-06 18:44:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 18:44:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:44:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:44:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 18:46:03');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 18:46:10');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:46:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 18:50:11');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:03:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:03:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:03:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:06:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-06 19:06:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:07:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:07:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:07:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:07:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:08:07');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:08:09');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:08:13');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:08:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:08:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:08:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:08:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:08:45');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:08:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:08:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '免学费学车', '2020-02-06 19:09:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 19:09:09');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:09:13');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:15');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:09:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:09:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:09:36');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:09:38');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:09:41');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:09:44');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:09:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:09:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:09:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:10:02');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:10:07');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:10:10');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:10:12');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 19:10:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:10:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:10:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:10:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:03');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:06');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:08');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:09');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Aj球鞋', '2020-02-06 19:18:11');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:17');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 19:18:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:18:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:18:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:18:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:34');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:36');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:49');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:18:51');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:18:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:18:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:18:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:19:02');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:19:04');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:19:08');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:19:11');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 19:19:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:19:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:19:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-06 19:19:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-06 19:19:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:19:34');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-06 19:19:47');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:20:02');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-06 19:20:04');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-06 19:20:06');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 12:20:41');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:38:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-08 22:38:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:38:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:38:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:38:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-08 22:38:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:39:11');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:39:40');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:39:51');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-08 22:39:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-08 22:39:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:39:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:39:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-08 22:39:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 22:40:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-08 22:40:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-08 23:54:43');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-08 23:54:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:48');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:41');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:35:50');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:51');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:52');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:35:52');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:35:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:35:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:35:55');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-09 13:35:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-09 13:35:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:35:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:57');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:35:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:58');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:35:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:35:59');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:36:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:36:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-09 13:36:00');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:36:01');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:36:01');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:36:01');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:14');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:15');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:16');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:17');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:17');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:19');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:19');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-09 13:37:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-09 13:37:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '免学费学车', '2020-02-09 13:37:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-09 13:37:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '免学费学车', '2020-02-09 13:37:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-09 13:37:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-09 13:37:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-09 13:37:33');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-13 21:33:31');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-13 21:34:20');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:21');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-13 21:34:23');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:25');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-13 21:34:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-13 21:34:27');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-13 21:34:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-13 21:34:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-13 21:34:29');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-13 21:34:30');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-13 21:44:18');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-15 17:04:13');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-15 17:05:45');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-15 17:23:01');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '1299元学车', '2020-02-15 17:23:06');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:23:28');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:24:15');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-15 17:25:53');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-15 17:26:34');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-15 17:26:54');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-15 17:26:56');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:27:08');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:27:22');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:27:38');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-15 17:27:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '口红', '2020-02-15 17:28:24');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-15 17:28:45');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:29:26');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:29:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '王者皮肤', '2020-02-15 17:31:04');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:31:10');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:31:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-15 17:31:37');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '优惠200元学车', '2020-02-15 17:33:46');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:35:15');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'Usb台灯', '2020-02-15 17:49:32');
+INSERT INTO `rewardlist` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', '精美挂件', '2020-02-15 17:53:00');
+
+-- ----------------------------
+-- Table structure for statistic
+-- ----------------------------
+DROP TABLE IF EXISTS `statistic`;
+CREATE TABLE `statistic`  (
+  `usercount` int(8) NULL DEFAULT NULL COMMENT '参与用户数',
+  `rewardcount` int(8) NULL DEFAULT NULL COMMENT '中奖人数',
+  `scancount` int(8) NULL DEFAULT NULL COMMENT '浏览人数'
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of statistic
+-- ----------------------------
+INSERT INTO `statistic` VALUES (0, 0, 73314);
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `openid` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `nickname` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `sex` int(1) NULL DEFAULT NULL,
+  `city` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `province` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `country` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `headimgurl` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `qualified` int(1) NOT NULL DEFAULT 1 COMMENT '是否具备抽奖资格，1是具备，0是不具备',
+  `ip` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `registertime` datetime(0) NULL DEFAULT NULL,
+  `lucktime` datetime(0) NULL DEFAULT NULL COMMENT '抽奖时间',
+  PRIMARY KEY (`openid`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+INSERT INTO `user` VALUES ('oTZhLxDz3Baz49sj9L4VipPyUGbE', '倪儿', 2, '', '', '', 'http://thirdwx.qlogo.cn/mmopen/vi_32/PmNvYRjd9PgT1sibhGhIaZcX9Cw9aQibrZLOqGWzT0upCqLMXRC4FfZclkTR80GW0siaBpxx3eCJibHWSY31ZeoKuQ/132', 1, '111.19.110.230', NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxEmTRfh_wVuOm3buLsL52q4', 'ムー', 1, '氹仔', '澳门', '中国', 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLdKAicD5ichy61wlaKuzLVa1HOhY36JqfP6WDsrpeQQBuxSBR8equlqY61r2QZF1aa0dwDACRNOAibw/132', 1, '123.139.82.180', NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxG3HGmWWcav8DsvxPS7ZaeI', '陌', 1, '', '上奥地利', '奥地利', 'http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erl2zu0F2K2iaE13FdH6ibHByEic9clBa32FSb89CcU7nofxkFjdjtln3drZBHvtjKobKqeWmomKt4aA/132', 0, NULL, NULL, '2020-02-05 08:20:42');
+INSERT INTO `user` VALUES ('oTZhLxGhwVyqLZ_XyofNZNPGOn9A', '                    眘 冄 ', 2, '', '', '古巴', 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIH452gTjAMRVv6kPDib5u6nLjuuO5NvibBpcAnhtmUgIMkpBLFsF6IaGE7m6Zib6G1jVL9anG9KtDHw/132', 1, NULL, NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 'A', 1, '西安', '陕西', '中国', 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLsvibia66D4YkbcJdJG4N4azG75icib2TSxXeicgeeNNKD6meoicSQicoZ58M4KKwKzVTD48UgOVDlg25Mw/132', 0, '111.19.40.128', '2020-02-17 17:29:32', '2020-02-12 08:20:48');
+INSERT INTO `user` VALUES ('oTZhLxMeEUgLtlPyxaeTC4djpDAk', '鱼于与雨羽', 2, '', '', '', 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKI7F70K0mIMBltUKXZQfV2o88GCuHOh1UZkHXfZrzzvVHriacd9BeG4uDJjjlFJf4h3Z67pSicYOw/132', 1, '111.18.93.102', NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxMknhoOx13bLLgh6yXGdcrA', 'Aa', 2, '', '', '中国', 'http://thirdwx.qlogo.cn/mmopen/vi_32/9KuXF9LTBUsfGdzhibGYKsKpCPlWmVF1zlz6IicZ50qEicdE6NNbib4543D97ogcyC83XsTgeyf70xeU9OUIF8omLg/132', 1, NULL, NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxNR0fuecJrHZANUOR95U-yM', '青鱼', 1, '商洛', '陕西', '中国', 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLdVowviaKicaibSH0SA6BgdhLge8JBuQ7EwKiao50cKC6iaibGP1woTWM3LFyJNsTJDPnxYLIDR3OEUUgw/132', 1, '117.136.87.153', NULL, NULL);
+INSERT INTO `user` VALUES ('oTZhLxO3m6bTEbNUua7NgnY7p5XA', '大树', 0, '', '', '', 'http://thirdwx.qlogo.cn/mmopen/vi_32/kibT058EjYH62vNTYQrJc7icib4ibmdHkiaP1H1g42kKau5MWjENcFNW1KqJguUCAmA0t1Nb0wXwFVuWIyziay07ibLzg/132', 1, '111.18.93.121', NULL, NULL);
+
+-- ----------------------------
+-- Table structure for zi
+-- ----------------------------
+DROP TABLE IF EXISTS `zi`;
+CREATE TABLE `zi`  (
+  `openid` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `remain` int(1) NOT NULL,
+  `t1` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t2` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t3` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t4` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t5` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t6` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t7` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t8` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t9` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `t10` int(3) UNSIGNED ZEROFILL NOT NULL,
+  `total` int(3) NOT NULL,
+  PRIMARY KEY (`openid`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of zi
+-- ----------------------------
+INSERT INTO `zi` VALUES ('oTZhLxEmTRfh_wVuOm3buLsL52q4', 5, 000, 000, 000, 000, 000, 000, 000, 000, 000, 000, 0);
+INSERT INTO `zi` VALUES ('oTZhLxG3HGmWWcav8DsvxPS7ZaeI', 5, 227, 221, 232, 216, 232, 229, 203, 211, 205, 245, 0);
+INSERT INTO `zi` VALUES ('oTZhLxGhwVyqLZ_XyofNZNPGOn9A', 5, 204, 190, 248, 196, 186, 233, 210, 223, 212, 205, 0);
+INSERT INTO `zi` VALUES ('oTZhLxH80vLXI15BluOE2UZlqVCE', 5, 000, 000, 000, 000, 000, 000, 000, 000, 000, 000, 0);
+INSERT INTO `zi` VALUES ('oTZhLxMeEUgLtlPyxaeTC4djpDAk', 5, 208, 244, 264, 237, 254, 258, 220, 246, 255, 224, 0);
+INSERT INTO `zi` VALUES ('oTZhLxMknhoOx13bLLgh6yXGdcrA', 5, 204, 233, 211, 199, 212, 204, 192, 187, 214, 206, 0);
+
+SET FOREIGN_KEY_CHECKS = 1;
