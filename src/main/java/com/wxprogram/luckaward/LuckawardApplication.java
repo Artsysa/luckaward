@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
 @EnableCaching
 @EnableTransactionManagement
 @EnableScheduling

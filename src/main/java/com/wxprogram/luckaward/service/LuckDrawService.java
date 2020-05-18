@@ -8,7 +8,6 @@ import com.wxprogram.luckaward.mapper.ZiInfoMapper;
 import com.wxprogram.luckaward.pojo.LuckZi;
 import com.wxprogram.luckaward.pojo.Reward;
 import com.wxprogram.luckaward.pojo.Zi;
-import com.wxprogram.luckaward.prize.Prizes;
 import com.wxprogram.luckaward.util.RandomUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

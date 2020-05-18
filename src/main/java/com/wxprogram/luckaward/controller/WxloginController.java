@@ -70,15 +70,15 @@ public class WxloginController {
 
     @ApiOperation(value = "微信回调",notes = "微信回调")
     @GetMapping("/callback")
-    public String callback(HttpServletRequest req, HttpServletResponse rep) throws ServletException, IOException {
+    public void callback(HttpServletRequest req, HttpServletResponse rep) throws ServletException, IOException {
         User user = loginService.login(req, rep);
         //如果为空说明当前没有用户信息，用户需要重新登陆
         if(user==null){
             String urls="http://49.235.43.59/wx/wxlogin";
             rep.sendRedirect(urls);
-            return null;
+            return ;
         }
-        return "/assert/kaifa.html";
+        rep.sendRedirect("http://47.92.238.173/kaifa.html");
 
     }
 
